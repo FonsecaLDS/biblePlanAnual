@@ -517,7 +517,7 @@ const READINGS = [
   "Ap 1–4","Ap 5–9","Ap 10–14","Ap 15–18","Ap 19–22",
 ];
 
-const START = new Date(2026, 3, 18);
+const START = new Date(2026, 2, 18);
 const PLAN  = READINGS.map((r, i) => {
   const d = new Date(START); d.setDate(d.getDate() + i);
   return { day: i + 1, date: d.toISOString().split('T')[0], reading: r };
